@@ -1,0 +1,143 @@
+.intro {
+  margin-bottom: 20px;
+
+  text-align: center;
+
+  background-color: $green;
+  background-image: linear-gradient(to top, $white 97px, transparent 97px),
+  url("../image/intro/intro-bg-mobile.jpg"),
+  linear-gradient(to top, $white 216px, $green 216px);
+  background-position: center top;
+  background-repeat: no-repeat;
+  background-size: 100%;
+}
+
+.intro__title {
+  margin-top: 0;
+  margin-bottom: 20px;
+  padding-top: 25px;
+
+  font-size: 36px;
+  line-height: 40px;
+  font-weight: 400;
+  color: $white;
+}
+
+.intro__slogan {
+  display: block;
+  margin-bottom: 25px;
+
+  font-weight: 400;
+  color: $white;
+  text-transform: uppercase;
+}
+
+.intro__product {
+  margin: 0;
+}
+
+.intro__product-image {
+  width: 280px;
+  height: 270px;
+}
+
+.intro__button {
+  width: 100%;
+}
+
+@media (min-width: $tablet-width) {
+  .intro {
+    // padding-left: 90px;
+    min-height: 816px;
+    text-align: left;
+
+    background: transparent;
+  }
+
+  .intro__wrapper {
+    position: relative;
+  }
+
+  .intro__title {
+    margin-left: 90px;
+    margin-bottom: 30px;
+    padding-top: 25px;
+
+    width: 425px;
+
+    font-size: 60px;
+    line-height: 1;
+    font-weight: 400;
+    color: $black;
+  }
+
+  .intro__product-image {
+    width: 709px;
+    height: 609px;
+
+    position: absolute;
+    top: 227px;
+    right: 0;
+    z-index: -1;
+  }
+
+  .intro__slogan {
+    display: block;
+    margin-left: 90px;
+    margin-bottom: 45px;
+
+    width: 300px;
+
+    font-size: 20px;
+    line-height: 24px;
+    font-weight: 400;
+    color: $black;
+  }
+
+  .intro__button {
+    margin-left: 90px;
+    padding: 15px 25px;
+
+    width: auto;
+
+    font-size: 20px;
+    line-height: 22px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .intro {
+    margin-bottom: 80px;
+    padding-top: 45px;
+    // padding-left: 85px;
+
+    min-height: 530px;
+  }
+
+  .intro__wrapper {
+    margin-left: 85px;
+  }
+
+  .intro__title {
+    margin-left: 0;
+    padding-top: 0;
+  }
+
+  .intro__product-image {
+    top: -85px;
+    right: 240px;
+
+    width: 552px;
+    height: 499px;
+
+    z-index: auto;
+  }
+
+  .intro__slogan {
+    margin-left: 0;
+  }
+
+  .intro__button {
+    margin-left: 0;
+  }
+}

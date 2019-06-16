@@ -1,0 +1,27 @@
+.button {
+  display: inline-block;
+  padding: 10px;
+
+  font: inherit;
+  font-size: 14px;
+  line-height: 18px;
+  color: $white;
+  text-align: center;
+  text-transform: uppercase;
+  text-decoration: none;
+
+  background-color: $green;
+  border: none;
+
+  &:hover,
+  &:focus {
+    background-color: darken($green, 5%);
+  }
+
+  &:active {
+    color: rgba(255, 255, 255, 0.3);
+
+    background-color: darken($green, 10%);
+  }
+}
+

@@ -1,0 +1,42 @@
+// config
+@import "fonts";
+@import "variables";
+@import "mixins";
+
+// blocks common
+@import "blocks/page";
+@import "blocks/button";
+
+// blocks header
+@import "blocks/page-header";
+@import "blocks/main-nav";
+
+// blocks index
+@import "blocks/intro";
+@import "blocks/programs";
+@import "blocks/program-card";
+@import "blocks/info";
+@import "blocks/example";
+@import "blocks/results";
+// @import "blocks/slider";
+
+// blocks catalog
+@import "blocks/catalog";
+@import "blocks/card";
+@import "blocks/extra";
+
+// blocks form
+@import "blocks/program";
+@import "blocks/form";
+@import "blocks/checklist";
+@import "blocks/radio-buttons";
+
+// blocks footer
+@import "blocks/page-footer";
+@import "blocks/contacts";
+@import "blocks/map";
+@import "blocks/socials";
+@import "blocks/copyright";
+
+// blocks modifiers
+@import "blocks/title-line"

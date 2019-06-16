@@ -1,0 +1,22 @@
+.programs {
+  margin-bottom: 30px;
+}
+
+.programs__wrapper {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  align-content: space-between;
+}
+
+@media (min-width: $tablet-width) {
+  .programs {
+    margin-bottom: 50px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .programs {
+    margin-bottom: 80px;
+  }
+}

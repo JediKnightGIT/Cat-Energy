@@ -1,0 +1,265 @@
+.extra {
+  margin-bottom: 35px;
+}
+
+.extra__title {
+  margin: 0;
+  margin-bottom: 30px;
+
+  font-size: 24px;
+  line-height: 26px;
+  font-weight: 400;
+}
+
+.extra__list {
+  @include reset-list;
+
+  margin-bottom: 40px;
+}
+
+.extra__item {
+  margin-top: -1px;
+  padding-top: 15px;
+  padding-bottom: 15px;
+
+  border-top: 1px solid #cdcdcd;
+  border-bottom: 1px solid #cdcdcd;
+}
+
+.extra__item:first-child {
+  margin-top: 0;
+}
+
+.extra__name {
+  margin: 0;
+  margin-bottom: 10px;
+
+  font-size: 16px;
+  line-height: 18px;
+  font-weight: 400;
+  text-transform: uppercase;
+}
+
+.extra__value {
+  display: flex;
+  justify-content: space-between;
+
+  margin: 0;
+  margin-bottom: 15px;
+
+  font-family: $secondary-font;
+}
+
+.extra__order {
+  width: 100%;
+
+  font-size: 16px;
+  line-height: 20px;
+}
+
+.extra__gift {
+  padding: 40px 50px;
+  width: 100%;
+  height: 289px;
+
+  text-align: center;
+
+  background-image: url("../image/extra/gift-bg-mobile@1x.jpg");
+  background-position: 0 0;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+    background-image: url("../image/extra/gift-bg-mobile@2x.jpg");
+  }
+
+  position: relative;
+
+  &::before {
+    content: '';
+
+    position: absolute;
+    top: 65px;
+    left: 50%;
+    transform: translateX(-50%);
+
+    width: 55px;
+    height: 60px;
+
+    background-image: url("../image/extra/gift-logo.svg");
+  }
+}
+
+.extra__promotion {
+  margin: 0;
+  margin-top: 150px;
+
+  font-family: $secondary-font;
+  font-size: 16px;
+  line-height: 20px;
+  color: $white;
+}
+
+@media (min-width: $tablet-width) {
+  .extra {
+    margin-bottom: 75px;
+  }
+
+  .extra__title {
+    margin-bottom: 80px;
+
+    font-size: 36px;
+    line-height: 1;
+  }
+
+  .extra__list {
+    border-left: 1px solid #cdcdcd;
+    border-right: 1px solid #cdcdcd;
+  }
+
+  .extra__item {
+    padding: 25px 35px;
+  }
+
+  .extra__item-wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    margin-bottom: 25px;
+  }
+
+  .extra__name {
+    margin-bottom: 0;
+
+    font-size: 20px;
+    line-height: 22px;
+  }
+
+  .extra__value {
+    margin-bottom: 0;
+    width: 45%;
+
+    font-size: 16px;
+    line-height: 20px;
+    text-align: right;
+  }
+
+  .extra__weight {
+    width: 75%;
+  }
+
+  .extra__price {
+    margin-left: 17.5%;
+    width: 25%;
+  }
+
+  .extra__gift {
+    padding-top: 60px;
+    padding-bottom: 60px;
+    padding-right: 12.7%;
+    padding-right: 15.5%;
+    height: 200px;
+
+    background-image: url("../image/extra/gift-bg-tablet@1x.jpg");
+
+    text-align: left;
+
+    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+      background-image: url("../image/extra/gift-bg-tablet@2x.jpg");
+    }
+
+    &::before {
+      left: 12.7%;
+    }
+  }
+
+  .extra__promotion {
+    margin-top: 10px;
+    margin-left: auto;
+    max-width: 175px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .extra {
+    margin-bottom: 85px;
+  }
+
+  .extra__wrapper {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .extra__list {
+    margin: 0;
+    width: 895px;
+
+    border-left: none;
+    border-right: none;
+  }
+
+  .extra__item-wrapper {
+    margin-bottom: 0;
+    width: 100%;
+
+  }
+
+  .extra__item {
+    display: flex;
+    justify-content: space-between;
+
+    padding: 15px 0;
+    padding-bottom: 16px;
+  }
+
+  .extra__name {
+    margin: auto 0;
+  }
+
+  .extra__value {
+    justify-content: space-between;
+
+    margin-right: 40px;
+    width: 285px;
+
+    text-align: left;
+  }
+
+  .extra__weight {
+    width: 235px;
+  }
+
+  .extra__price {
+    margin-left: 0;
+    width: 50px;
+
+  }
+
+  .extra__order {
+    max-width: 245px;
+  }
+
+  .extra__gift {
+    padding: 40px;
+    width: 245px;
+    height: 289px;
+
+    background-image: url("../image/extra/gift-bg-desktop@1x.jpg");
+
+    text-align: center;
+
+    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+      background-image: url("../image/extra/gift-bg-desktop@2x.jpg");
+    }
+
+    &::before {
+      left: 50%;
+    }
+  }
+
+  .extra__promotion {
+    margin-top: 150px;
+    max-width: auto;
+  }
+}
